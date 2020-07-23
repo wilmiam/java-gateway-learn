@@ -10,7 +10,7 @@ import java.io.IOException;
 @WebServlet(name = "eatuul", urlPatterns = "/*")
 public class EatuulServlet extends HttpServlet {
 
-    private EatRunner eatRunner = new EatRunner();
+    private final EatRunner eatRunner = new EatRunner();
 
     @Override
     public void service(HttpServletRequest req, HttpServletResponse resp)
