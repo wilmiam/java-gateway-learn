@@ -14,7 +14,7 @@ public class EatuulServlet extends HttpServlet {
 
     @Override
     public void service(HttpServletRequest req, HttpServletResponse resp)
-            throws ServletException, IOException {
+            throws IOException {
         //将request，和response放入上下文对象中
         eatRunner.init(req, resp);
         try {

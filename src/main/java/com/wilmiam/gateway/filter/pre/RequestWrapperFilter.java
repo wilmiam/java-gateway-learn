@@ -33,7 +33,7 @@ public class RequestWrapperFilter extends EatuulFilter {
     @Override
     public void run() {
         // 这是你要转发到哪里的地址
-        String rootURL = "http://127.0.0.1:9090";
+        String rootURL = "http://192.168.7.146:3000";
         RequestContext ctx = RequestContext.getCurrentContext();
         HttpServletRequest servletRequest = ctx.getRequest();
         String targetURL = rootURL + servletRequest.getRequestURI();
